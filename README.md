@@ -1,1 +1,0 @@
-# LazyCote.github.io

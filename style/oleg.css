@@ -1,0 +1,21 @@
+.block__right-description {
+	max-width: 713px;
+	width: 100%;
+	height: 650px;
+	background-color: #f2f2f2;
+	margin-top: 60px;
+}
+.description__block__left-img {
+	height: 100%;
+	transform: translate(-70px,0px);
+}
+.description__block__left-img:hover {
+	transition: 1s;
+	transform: translate(-70px,0px) scale(1.1);
+}
+.description__block__link-a {
+	color: red;
+}
+@media screen and (max-width: 1024px), and (orientation:landscape) {
+
+}

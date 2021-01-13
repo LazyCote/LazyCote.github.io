@@ -1,0 +1,140 @@
+.header__mobile {
+	display: none;
+}
+
+
+/* header */
+.header {
+	max-width: 1920px;
+	width: 100%;
+	height: 50px;
+	background-color: #24292E;
+
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+.header__logo {
+	position: absolute;
+	display: flex;
+	margin-left:42px;
+}
+.header__logo-img {
+	width: 45px;
+	height: 45px;
+}
+.header__logo-text {
+	margin-left: 9px;
+}
+.header__logo-title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: auto;
+	text-align: center;
+	color: white;
+}
+.header__logo-subtitle {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: auto;
+	text-align: center;
+	color: white;
+}
+.header__nav {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 506px;
+	width: 100%;
+}
+.header__nav-ul {
+	display: flex;
+	align-items: center;
+	max-width: 506px;
+	width: 100%;
+}
+.header__nav-li {
+	font-weight: 400;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	padding-left: 100px;
+	transition: 0.5s;
+}
+.header__nav-li-first{
+	padding-left: 0px;
+}
+.header__nav-li:hover {
+	color: #c9c9c9;
+	transition: 0.5s;
+}
+.header__search {
+	position: absolute;
+	margin-left: 1597px;
+	display: none;
+}
+.header__search-input {
+	text-align: center;
+	font-weight: 400;
+	font-size: 18px;
+	border-radius: 50px;
+}
+
+/* footer */
+
+.footer {
+	margin:0 auto;
+	margin-top: 212px;
+	max-width: 1920px;
+	width: 100%;
+}
+.footer__container {
+	margin:0 auto;
+	width: 100%;
+	height: 250px;
+	background-color: #24292E;
+}
+.footer__container-watermark {
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 35px;
+}
+.footer__container__watermark-title {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 40px;
+
+	color: #595959;
+}
+.footer__container__watermark-ico {
+	display: flex;
+	justify-content: space-between;
+	width: 110px;
+}
+.footer__container__watermark-img {
+	width: 25px;
+	height: 25px;
+
+}
+.footer__container-menu {
+	width: 1200px;
+	height:250px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-around;
+}
+.footer__container__menu-ul {
+	padding-top: 34px;
+}
+.footer__container__menu-li {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+}
+.contfooter {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 40px;
+	color: white;
+}

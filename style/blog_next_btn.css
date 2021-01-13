@@ -1,0 +1,51 @@
+.btn_container {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+.btn-back:not(:first-child) {
+	width: 150px;
+	height: 50px;
+	background-color: #FFDF00;
+	border-radius: 50px;
+}
+.btn-left {
+	display: none;
+}
+.btn-right {
+	width: 150px;
+	height: 50px;
+	background-color: #fff;
+	transform: translate(10px,-10px);
+	transition: 1s;
+	border-radius: 50px;
+
+	color: #24292E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.btn-left:hover {
+	transform: translate(0px,0px);
+	transition: 1s;
+}
+.btn-right:hover {
+	transform: translate(0px,0px);
+	transition: 1s;
+}
+.btn-back:hover .btn-left {
+	transform: translate(0px,0px);
+	transition: 1s;
+}
+.btn-back:hover .btn-right {
+	transform: translate(0px,0px);
+	transition: 1s;
+}
+@media screen and (max-width: 1024px), and (orientation:landscape) {
+.btn_container {
+	width: 850px;
+}
+}

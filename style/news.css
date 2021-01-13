@@ -1,0 +1,143 @@
+* {
+	box-sizing: 0;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+body {
+	font-family: 'Rubik', sans-serif;
+}
+ul, li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+
+/* headertwo */
+.headertwo {
+	max-width: 1920px;
+	width: 100%;
+	margin:0 auto;
+}
+.headertwo__container {
+	max-width: 1000px;
+	width: 100%;
+	height: 148px;
+	margin:0 auto;
+	background-color: #24292E;
+	border-radius:0px 0px 15px 15px;
+}
+.headertwo__container-discription {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: auto;
+	color: white;
+
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 32px;
+}
+
+/*  news */
+.news {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+.news__container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+.container__line {
+	display: flex;
+	justify-content: space-between;
+}
+.container__line-block {
+	width: 450px;
+	height: 350px;
+	background-color: #FFDF00;
+	border-radius: 15px;
+	margin-top: 100px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	overflow: hidden;
+}
+.container__line-img {
+	width: 800px;
+	transform: translate(-50px,50px);
+	opacity: 0.7;
+	transition: 1s;
+}
+.container__line-img:hover {
+	
+	transform: translate(-50px,50px) scale(1.2);
+	opacity: 0.4;
+	transition: 1s;
+}
+.line__block-title {
+	font-weight: 500;
+	font-size: 56px;
+	line-height: auto;
+	text-align: center;
+	color: white;
+	transform: translate(0px,-220px);
+}
+.line__block-subtitle {
+	width: 418px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: auto;
+	text-align: center;
+	color: white;
+	transform: translate(0px,-220px);
+}
+@media screen and (max-width: 800px), and (orientation:landscape) {
+.headertwo__container {
+	max-width: 1000px;
+	width: 100%;
+	height: 148px;
+	border-radius:0px;
+}
+.headertwo__container-discription {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: auto;
+	color: white;
+
+	max-width: 800px;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 32px;
+}
+.container__line-block {
+	width: 350px;
+	height: 250px;
+	background-color: #FFDF00;
+	border-radius: 15px;
+	margin-top: 100px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	overflow: hidden;
+}
+.line__block-subtitle {
+	max-width: 418px;
+	width: 90%;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: auto;
+	text-align: center;
+	color: white;
+	transform: translate(0px,-220px);
+}
+}

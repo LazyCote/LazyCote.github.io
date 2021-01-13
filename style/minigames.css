@@ -1,0 +1,65 @@
+* {
+	box-sizing: 0;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+body {
+	font-family: 'Rubik', sans-serif;
+}
+ul, li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.footer{
+	margin-top: 559px;
+}
+
+/* headertwo */
+.headertwo {
+	max-width: 1920px;
+	width: 100%;
+	margin:0 auto;
+}
+.headertwo__container {
+	max-width: 1000px;
+	width: 100%;
+	height: 148px;
+	margin:0 auto;
+	background-color: #24292E;
+	border-radius:0px 0px 15px 15px;
+}
+.headertwo__container-discription {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: auto;
+	color: white;
+
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 32px;
+}
+
+/*  news */
+.game {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+.game__container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+.sorry {
+	margin: 0 auto;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: auto;
+	color: red;
+
+	text-align: center;
+}
