@@ -9,9 +9,11 @@ doc.querySelector(".burger").addEventListener("click",()=>{
 	b=i%2;
 	if (b==0) {
 		doc.querySelector(".menu__drop").style.display="block";
+		doc.querySelector(".burger").style.fill="#FFDF00";
 		i++;
 	} else if (b==1) {
 		doc.querySelector(".menu__drop").style.display="none";
+		doc.querySelector(".burger").style.fill="#fff";
 		i++;
 	}
 })

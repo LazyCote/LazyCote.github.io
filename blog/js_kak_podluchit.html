@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="../style/blog_next_and_back_btn.css">
 <link rel="shortcut icon" href="../src/logo.png">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=1920">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
@@ -37,6 +37,26 @@
 		</form>
 	</header>
 </section>
+<section class="header__mobile">
+	<header class="header__mobile">
+		<a href="../index.html" class="header__logo">
+			<img src="../src/logo.png" class="header__logo-img">
+			<div class="header__logo-text">
+				<div class="header__logo-title">LazyCote</div>
+				<div class="header__logo-subtitle">team</div>
+			</div>
+		</a>
+		<svg height="100%" class="burger" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 24 24" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Icon"><path d="M4,6.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/><path d="M4,12.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/><path d="M4,18.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/></g></svg>
+	</header>
+	
+</section>
+<div class="menu__drop">
+			<ul class="menu__drop-ul">
+				<li ><a href="../index.html" class="menu__drop-li">Главная</a></li>
+				<li ><a href="../project.html" class="menu__drop-li">Проекты</a></li>
+				<li ><a href="../about.html" class="menu__drop-li">О нас</a></li>
+			</ul>
+</div>
 
 <section class="headertwo">
 	<div class="headertwo__container">	
@@ -48,7 +68,7 @@
 					Для того чтобы пользоваться сценариями существует такой тег как <span class="mark">&lt;script&gt; &lt;/script&gt; </span>. Тут есть 2 варианта написание кода. Писать прям в файле HTML промеж тега <span class="mark">&lt;script&gt; &lt;/script&gt; </span>  или же вывести ваши скрипты в отдельный файл. Лучше писать в отдельном файле, так и ваш код HTML будет красивее и меньше будет ваш файл с кодом и меньше шансов запутаться. 
 Тогда появляется вопрос, как подключить файл JavaScript. Для начала его естественно нужно создать, файлы JavaScript обладают расширением .js. Назовите файл по тому, что этот скрипт будет делать или если он у вас относится только к одной вкладке вашего сайта, по названию этой страницы, если index.html, то и index.js. Так же как и у HTML, файлы стоит называть английскими словами, ну или хотя бы писать транслитом. <br>
 Так как же подключить наш JavaScript ? Используем тот же тег <span class="mark">&lt;script&gt; </span>, только к нему добавим такой атрибут как <span class="mark">src</span>. Если вы не знакомы с этим атрибутом значит бегом к нашему курсу по HTML или к справочнику, на который ссылка будет в самом низу. Когда вы подключаете ваш файл, главное правильно указать его место расположения. В случае нашего примера мы укажем что наш файл, находится в той же папке что и файл HTML<span class="mark"> &lt;script src=”index.js”&gt; &lt;/script&gt; </span>. Вообще, под файлы стилей и файлы скриптов, стоит создавать отдельные папки, чтобы было меньше путаницы и было проще ориентироваться по вашему проекты. Поэтому создайте папку scripts в папке вашего проекта. <br>Теперь появляется вопрос, как тогда подключить файл, а вот так <span class="mark"> &lt;script src=”scripts/index.js”&gy; &lt;/script&gt; </span>, пишем название папки и название файла, если ваш файл на уровень ниже, то в начале пишем <span class="mark"> “../scripts/index.js” </span>– так мы дадим коду понять, что сначала, стоит выйти из папки в которой находится ваш HTML. <br>
-Что ж, подытожим, теперь вы знаете 2 варианта написания ваших скриптов. Каким пользоваться решайте сами, но если вы хотите просто поиграться строчек не более чем на 100, то просто пишите ваш код между тегов.<br>
+Что ж, подытожим, теперь вы знаете 2 варианта написания ваших скриптов. Каким пользоваться решайте сами, но если вы хотите просто поиграться строчек не более чем на 100, то просто пишите ваш код между тегов.<br><br>
 
 					<span class="link">
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Glossary/WebDAV" class="link-a">developer.mozilla.org</a>
