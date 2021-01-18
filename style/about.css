@@ -150,6 +150,9 @@ a {
 	width: 150px;
 	height: 150px;
 }
+.container__banner {
+	border-radius: 0px;
+}
 .header__two__container-link {
 	margin-top: 150px;
 }
