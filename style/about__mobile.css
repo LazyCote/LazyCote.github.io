@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) and (orientation:portrait){
+@media screen and (max-width: 768px){
 .header__two__container-banner {
 	max-width: 1440px;
 	width: 100%;
@@ -21,7 +21,7 @@
 	margin-top: 0px;
 }
 }
-@media screen and (max-width: 640px) and (orientation:portrait){
+@media screen and (max-width: 640px){
 .header__two__container-banner {
 	max-width: 1440px;
 	width: 100%;
@@ -62,7 +62,7 @@
 	margin: 0 auto;
 }
 }
-@media screen and (max-width: 600px) and (orientation:portrait){
+@media screen and (max-width: 600px){
 .header__two__container-banner {
 	max-width: 1440px;
 	width: 100%;
@@ -118,7 +118,7 @@
 	margin: 0 auto;
 }
 }
-@media screen and (max-width: 480px) and (orientation:portrait){
+@media screen and (max-width: 480px){
 .header__two__container-banner {
 	max-width: 1440px;
 	width: 100%;
@@ -166,7 +166,7 @@
 	margin: 0 auto;
 }
 }
-@media screen and (max-width: 414px) and (orientation:portrait){
+@media screen and (max-width: 414px){
 .header__two__container-banner {
 	max-width: 1440px;
 	width: 100%;
@@ -214,7 +214,7 @@
 	margin: 0 auto;
 }
 }
-@media screen and (max-width: 375px) and (orientation:portrait){
+@media screen and (max-width: 375px){
 .header__two__container-banner {
 	max-width: 1440px;
 	width: 100%;
@@ -274,7 +274,17 @@
 	margin: 0 auto;
 }
 }
-@media screen and (max-width: 320px) and (orientation:portrait){
+@media screen and (max-width: 360px){
+.container__banner {
+	max-width: 1440px;
+	width: 200%;
+	margin: 0 auto;
+	display: block;
+	border-radius: 0px;
+	margin-left: -180px;
+}
+}
+@media screen and (max-width: 320px){
 .header__two__container-banner {
 	max-width: 1440px;
 	width: 100%;
