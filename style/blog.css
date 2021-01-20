@@ -196,13 +196,3 @@ a {
 }
 
 }
-@media screen and (max-width: 1024px), and (orientation:landscape) {
-.warning__container {
-	width: 100%;
-	border-radius: 0;
-}
-.warning__container-subtitle {
-	width: 95%;
-}
-
-}
