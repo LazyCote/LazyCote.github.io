@@ -568,6 +568,30 @@ a {
 }
 
 }
+@media screen and (max-width: 700px){
+
+.footer__container-watermark {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.footer__container__menu-ul {
+	margin-left:70px;
+}
+.footer__container__menu-li {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 40px;
+	color: white;
+}
+.contfooter {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 40px;
+	color: white;
+}
+
+}
 @media screen and (max-width: 667px){
 .header__logo {
 	position: relative;
