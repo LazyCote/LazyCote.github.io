@@ -19,13 +19,6 @@
 	transform: translate(0px,-200px) scale(1.1);
 	filter: opacity(0.7);
 }
-.container__banner-title {
-	font-weight: 500;
-	font-size: 48px;
-	line-height: auto;
-	color: #fff;
-	transform: translate(0px,-500px);
-}
 .image {
 	width: 400px;
 	margin: 0 auto;
