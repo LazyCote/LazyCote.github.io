@@ -98,7 +98,7 @@
 	transform: translate(0px,-220px);
 }
 }
-@media screen and (max-width: 707px) {
+@media screen and (max-width: 700px) {
 .headertwo__container {
 	max-width: 1000px;
 	width: 100%;
