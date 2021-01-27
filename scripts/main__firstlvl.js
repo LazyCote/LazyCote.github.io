@@ -5,7 +5,7 @@ var copywrite=doc.querySelector(".footer__container__watermark-title");
 var i=0,
 	b=0;
 doc.querySelectorAll(".footer__container__menu-li")[3].setAttribute("href","https://lazycote.github.io/");
-alert(window.innerWidth);
+
 doc.querySelector(".burger").addEventListener("click",()=>{
 	b=i%2;
 	if (b==0) {
