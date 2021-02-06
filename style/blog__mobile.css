@@ -8,7 +8,7 @@
 }
 
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 660px){
 .selector__container-ul {
 	display: flex;
 	flex-direction: column;

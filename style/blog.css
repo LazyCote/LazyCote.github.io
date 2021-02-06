@@ -20,17 +20,24 @@ a {
 	max-width: 1920px;
 	margin: 0 auto;
 }
-.selector__container {
+.selector__container{
 	max-width: 1920px;
 	width: 100%;
 	margin: 0 auto;
 	margin-top:170px;
+}
+.selector__container-line { 
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top:100px;
 }
 .selector__container-ul {
 	display: flex;
 	margin: 0 auto;
 	max-width: 1280px;
 	width: 100%;
+
 }
 .selector__container-li {
 	margin: 0 auto;
@@ -62,26 +69,6 @@ a {
 .container__ul-php, .container__ul-php_drop {
 	position: absolute;
 }
-
-
-.ul-js {
-
-}
-.ul-html {
-	
-}
-.ul-html_drop {
-
-}
-.ul-js_drop {
-}
-.ul-css {
-	padding-top: 200px;
-}
-.ul-php {
-	padding-top: 150px;
-}
-
 
 .container__li-php, .container__li-php_drop {
 	display: none;
