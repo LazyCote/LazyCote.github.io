@@ -18,3 +18,5 @@ doc.querySelector(".burger").addEventListener("click",()=>{
 		i++;
 	}
 })
+
+$("head").prepend('<script data-ad-client="ca-pub-6725342082633367" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>');
