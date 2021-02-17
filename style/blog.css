@@ -26,7 +26,7 @@ a {
 	margin: 0 auto;
 	margin-top:170px;
 }
-.selector__container-line { 
+.selector__container-line {
 	max-width: 1920px;
 	width: 100%;
 	margin: 0 auto;
@@ -57,10 +57,10 @@ a {
 	font-weight: 500;
 	font-size: 36px;
 	line-height: auto;
-	transition: 1s;	
+	transition: 1s;
 
 }
-.selector__container-li:hover {
+.selector__container-li:hover,.selector__container-li:active {
 	background-color: #F2F2F2;
 	transition: 1s;
 	color: #24292E;
@@ -74,7 +74,7 @@ a {
 	display: none;
 	transition: 1s;
 }
-.selector__container-li:hover .container__li-php {
+.selector__container-li:hover .container__li-php,.selector__container-li:active .container__li-php {
 	display: block;
 
 	width: 200px;
@@ -88,14 +88,14 @@ a {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: auto;
-	transition: 0.55s;	
+	transition: 0.55s;
 
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 
 }
-.selector__container-ul .container__li-php:hover {
+.selector__container-ul .container__li-php:hover,.selector__container-ul .container__li-php:active {
 	background-color: #F2F2F2;
 	transition: 0.55s;
 	color: #24292E;
@@ -105,7 +105,7 @@ a {
 .container__li-php .container__ul-php_drop {
 	margin-left: 200px;
 }
-.container__li-php:hover .container__li-php_drop {
+.container__li-php:hover .container__li-php_drop,.container__li-php:active .container__li-php_drop {
 	display: block;
 
 	width: 200px;
@@ -119,10 +119,10 @@ a {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: auto;
-	transition: 0.55s;	
+	transition: 0.55s;
 
 }
-.container__li-php .container__li-php_drop:hover {
+.container__li-php .container__li-php_drop:hover,.container__li-php .container__li-php_drop:active {
 	background-color: #F2F2F2;
 	transition: 0.55s;
 	color: #24292E;
@@ -168,7 +168,7 @@ a {
 	width: 150px;
 	height: 50px;
 }
-.selector__container-li:hover .container__li-php {
+.selector__container-li:hover .container__li-php, .selector__container-li:active .container__li-php {
 	width: 150px;
 	height: 50px;
 
@@ -176,7 +176,7 @@ a {
 .container__li-php .container__ul-php_drop {
 	margin-left: 150px;
 }
-.container__li-php:hover .container__li-php_drop {
+.container__li-php:hover .container__li-php_drop,.container__li-php:active .container__li-php_drop {
 	width: 150px;
 	height: 50px;
 }
