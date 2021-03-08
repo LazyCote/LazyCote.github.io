@@ -5,6 +5,7 @@ var copywrite=doc.querySelector(".footer__container__watermark-title");
 	var i=0,
 	b=0;
 doc.querySelectorAll(".footer__container__menu-li")[3].setAttribute("href","https://lazycote.github.io/");
+if (doc.querySelector(".burger")!=undefined || doc.querySelector(".burger")!=null) {
 
 doc.querySelector(".burger").addEventListener("click",()=>{
 	b=i%2;
@@ -18,5 +19,5 @@ doc.querySelector(".burger").addEventListener("click",()=>{
 		i++;
 	}
 })
-
+}
 $("head").prepend('<script data-ad-client="ca-pub-6725342082633367" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>');
