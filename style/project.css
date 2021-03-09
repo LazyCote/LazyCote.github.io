@@ -35,10 +35,15 @@ a {
 	border-radius: 0px;
 	margin-top: 288px;
 }
+/* colorsstart */
+.purple {
+	background-color: #9d00ff;
+}
+/* colorsend */
 .line__container__blockone-circle {
 	width: 150px;
 	height: 150px;
-	background-color: #FFDF00;
+	background-color: #fff;
 	border-radius: 100px;
 	display: block;
 	margin: 0 auto;

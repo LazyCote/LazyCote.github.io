@@ -99,7 +99,7 @@ a {
 	justify-content: center;
 	align-items: flex-end;
 	z-index: 0;
-	
+
 }
 .block__little-img {
 	opacity: .5;
@@ -287,14 +287,15 @@ a {
 	font-size: 18px;
 	line-height: 35px;
 	color: white;
+	text-decoration: underline;
 }
 .cont {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 35px;
 	color: white;
+	text-decoration: none;
 }
 .creators__container__block-contactsli:not(:first-child) {
 	padding-left: 30px;
 }
-
