@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>I know where you!</title>
+    <style media="screen">
+      * {
+        border: 0;
+        outline:0;
+        margin:0;
+        box-sizing:0;
+      }
+      body {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        background: #520085;
+        font-family: "Rubik";
+      }
+      .btn {
+        margin-top: 300px;
+        width: 300px;
+        height:100px;
+        border-radius: 10px;
+
+        font-weight: 700;
+        font-size: 50px;
+        color:#520085;
+
+        box-shadow: 0px 25px 0px 1px rgba(0, 0, 0, .5);
+        transition: .5s;
+        animation-name:btnAnim;
+        animation-duration: 2s;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
+      }
+      .btn:hover {
+      transition: .5s;
+      //box-shadow: 0px 10px 0px 1px rgba(0, 0, 0, .5);
+      background: #7800c2;
+      color:#fff;
+      }
+      .info {
+        display:none;
+      }
+      .info__title {
+        font-weight: 500;
+        font-size: 32px;
+        color:#fff;
+        margin-top:50px;
+      }
+      td {
+        color: #fff;
+      }
+      table {
+        margin: 0 auto;
+        width: 400px;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: space-around;
+        margin-top:20px;
+      }
+      @keyframes btnAnim {
+        0% {
+          transform:translateY(0px);
+        }
+        100% {
+          transform:translateY(-100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" class="btn">Тык</button>
+    <div class="info">
+      <div class="info__title">
+        Это то что мы знаем о тебе!
+      </div>
+      <div class="info__container">
+        <table>
+          <tr>
+            <td>IP:</td><td id="ip"></td>
+          </tr>
+          <tr>
+            <td>IP версия:</td><td id="ipVersion"></td>
+          </tr>
+          <tr>
+            <td>Координаты:</td><td id="cord"></td>
+          </tr>
+          <tr>
+            <td>Страна:</td><td id="country"></td>
+          </tr>
+          <tr>
+            <td>Регион:</td><td id="region"></td>
+          </tr>
+          <tr>
+            <td>Город:</td><td id="city"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var info;
+      var ip , version, coord , country_name, region, city;
+      var statusInfo = false;
+      function infos () {
+        console.log(1);
+        fetch("https://ipapi.co/json/",{
+          headers:{
+            mode: "no-cors"
+          }
+        }).then(
+        response => {
+          response = response.json();
+          return response;
+        }).then(response=>{
+          console.log("ready");
+          document.querySelector(".info__title").innerHTML="Это то что мы знаем о тебе!";
+          ip=response.ip;
+          version=response.version;
+          country_name=response.country_name;
+          region=response.region;
+          city=response.city;
+          document.querySelector("#ip").innerHTML=response.ip;
+          document.querySelector("#ipVersion").innerHTML=response.version;
+          document.querySelector("#cord").innerHTML=response.latitude + " " + response.longitude;
+          document.querySelector("#country").innerHTML=response.country_name;
+          document.querySelector("#region").innerHTML=response.region;
+          document.querySelector("#city").innerHTML=response.city;
+        }).catch (insert =>{
+          console.log(2)
+            infos();
+        })
+      }
+      infos();
+      document.querySelector(".btn").addEventListener("click",()=>{
+        document.querySelector(".info").style.display="block";
+        if (ip== " " || ip==undefined || ip==null) {
+          document.querySelector(".info__title").innerHTML="Пожалуйста подождите...";
+        }
+      })
+    </script>
+  </body>
+</html>
